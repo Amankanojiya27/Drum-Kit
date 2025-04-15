@@ -50,16 +50,17 @@ function HomePage() {
 
   return (
     <div className="bg-gray-800 min-h-screen w-full">
-      <h1 className="text-[6rem] text-white text-center py-20 font-arvo">
+      <h1 className="text-[6rem] text-white text-center py-20 font-arvo"
+      style={{ textShadow: " 3px 0 #DA0463" }}>
         Drum 🥁 Kit
       </h1>
 
-      <div className="flex flex-wrap justify-center items-center gap-10 px-4">
+      <div className="flex flex-wrap justify-center items-center gap-5 px-4">
         {Items.map((item, i) => (
           <div
             key={i}
             onClick={() => playSound(item.text)}
-            className={`relative w-40 h-40 rounded-2xl shadow-xl overflow-hidden transition-all duration-200 cursor-pointer bg-white border-8 border-zinc-700 ${
+            className={`relative w-40 h-40 rounded-2xl shadow-xl overflow-hidden transition-all duration-200 cursor-pointer bg-white border-8 border-[#3F3F47] ${
               activeKey === item.text ? "scale-110 shadow-pink-500" : "hover:scale-105"
             }`}
             style={{
