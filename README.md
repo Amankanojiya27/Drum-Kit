@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+# 🥁 Drum Kit React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive **Drum Kit** built with **React + Tailwind CSS**. Press keys or click the pads to play cool drum sounds — complete with background images and smooth animations!
 
-Currently, two official plugins are available:
+## 🔥 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎹 Play drum sounds using keyboard keys (`W`, `A`, `S`, `D`, `J`, `K`, `L`)
+- 🖱️ Click on drum pads to play the sounds
+- 🎵 Each key is mapped to a specific drum sound (tom, snare, crash, etc.)
+- 🖼️ Beautiful background images on each pad
+- ⚡ Smooth scale animations on key press or click
+- ✨ Tailwind CSS styled layout
 
-## Expanding the ESLint configuration
+## 🎧 Key Bindings & Sounds
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Key | Sound       |
+|-----|-------------|
+| W   | Tom 1       |
+| A   | Tom 2       |
+| S   | Tom 3       |
+| D   | Tom 4       |
+| J   | Snare       |
+| K   | Crash       |
+| L   | Kick Bass   |
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Setup Instructions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone the repo:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+   ```bash
+   git clone https://github.com/your-username/drum-kit.git
+   cd drum-kit
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+📁 Project Structure
+drum-kit/
+├── public/
+│   └── sounds/         # All drum sound files (.mp3)
+├── src/
+│   └── assets/images/  # Pad background images
+│   └── HomePage.tsx    # Main UI + Logic
+├── App.tsx
+├── main.tsx
+└── README.md
+
+🙌 Credits
+Built with ❤️ by Aman
+Inspired by Drum Kit challenge (Angela Yu)
