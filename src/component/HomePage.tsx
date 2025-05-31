@@ -29,7 +29,7 @@ function HomePage() {
     const audio = new Audio(`/sounds/${soundMap[key]}`);
     audio.play();
     setActiveKey(key);
-    setTimeout(() => setActiveKey(null), 150);
+    // setTimeout(() => setActiveKey(null), 150);
   };
 
 
